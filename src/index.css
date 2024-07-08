@@ -14,7 +14,7 @@ body {
   overflow: hidden;
   position: relative;
 }
-.logo{
+.logo {
   filter: drop-shadow(0 0 0.75rem #38bff8);
 }
 body::before {
@@ -24,7 +24,11 @@ body::before {
   left: -50%;
   width: 110%;
   height: 110%;
-  background: radial-gradient(circle at center, #38bff823 10%, rgba(56, 191, 248, 0.031) 70%)
+  background: radial-gradient(
+      circle at center,
+      #38bff823 10%,
+      rgba(56, 191, 248, 0.031) 70%
+    )
     transparent;
   z-index: 0;
   transform: rotate(30deg);
@@ -34,5 +38,4 @@ body::before {
     width: 0%;
     height: 0%;
   }
-  
 }
