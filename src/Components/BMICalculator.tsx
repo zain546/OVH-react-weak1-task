@@ -35,7 +35,7 @@ const BMICalculator = () => {
 
   return (
     <>
-      <div className="flex md:flex-row flex-col items-center justify-center md:gap-8 gap-6 md-p-0 px-4 md:w-[80%] w-[90%] m-auto mt-20 md:mt-12">
+      <div className="flex md:flex-row flex-col items-center justify-center md:gap-8 gap-6 md-p-0 px-4 md:w-[80%] w-[90%] m-auto mt-10 md:mt-12">
         <div className="relative input-div w-full md:w-[48%]">
           <label
             className="absolute pl-1 -top-3 left-3 bg-[#101a2f]"
@@ -69,15 +69,15 @@ const BMICalculator = () => {
       </div>
       <button
         onClick={calculateBmi}
-        className="bg-[#16314B] text-white py-2 px-4 font-bold rounded-sm m-auto block mt-8"
+        className="bg-[#16314B] text-white py-2 px-4 font-bold rounded-sm m-auto block mt-5"
       >
         Calculate
       </button>
-      <div className="result w-[80%] m-auto text-center mt-10">
+      <div className="result w-[80%] m-auto text-center mt-6">
         <h6 className="mx-2">Your BMI: {bmi}</h6>
         <p className="text-sm md:text-lg">{message}</p>
         {imgSrc && (
-          <div className="img-cont h-48">
+          <div className="img-cont h-44">
             <img
               src={imgSrc}
               className="block m-auto h-[100%]"
