@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna&family=Poppins:ital,wght@0,300;0,700;1,600&family=Ubuntu&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  /* font-family: "Playwrite IT Moderna", cursive; */
+  /* font-family: cursive; */
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+body {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #101a2f;
+  overflow: hidden;
+  position: relative;
+}
+.logo{
+  filter: drop-shadow(0 0 0.75rem #38bff8);
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: -95%;
+  left: -50%;
+  width: 110%;
+  height: 110%;
+  background: radial-gradient(circle at center, #38bff823 10%, rgba(56, 191, 248, 0.031) 70%)
+    transparent;
+  z-index: 0;
+  transform: rotate(30deg);
+}
+@media screen and (max-width: 600px) {
+  body::before {
+    width: 0%;
+    height: 0%;
+  }
+  
+}
